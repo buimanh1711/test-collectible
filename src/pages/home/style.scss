@@ -1,0 +1,101 @@
+.collection__table-filter__section {
+  .filter__section-container {
+    display: flex;
+    .filter__section-search {
+      width: 600px;
+      max-width: 100%;
+      margin-right: auto;
+    }
+    .filter__section-date {
+      position: relative;
+      .date-options {
+        position: absolute;
+        background: white;
+        width: 100%;
+        z-index: 10;
+        bottom: -115px;
+        border-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 6px 11px -3px #919191;
+        box-shadow: 0px 6px 11px -3px #919191;
+      }
+      ul.date-options-list {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li {
+          padding: 8px 16px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+        li:hover {
+          background: rgba(234, 234, 234, 0.624);
+        }
+      }
+    }
+  }
+}
+
+.collection__table-sort__section {
+  .sort__section-container {
+    padding: 18px 12px;
+    font-weight: bold;
+    color: rgb(130, 129, 129);
+    .sort__section-label {
+      cursor: pointer;
+      width: 100%;
+      display: inline-block;
+      .sort__icon {
+        display: inline-block;
+        margin-left: 4px;
+        transform: translateY(2px);
+      }
+      &.end {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.collection__table-list {
+  .collection__item {
+    padding: 10px 16px;
+    border-top: 1px solid var(--my-border-color);
+  }
+  .collection__item-key {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &.end {
+      justify-content: flex-end;
+    }
+    &-label {
+      color: var(--my-text-color);
+      font-weight: 450;
+      text-align: center;
+      &.inc {
+        color: var(--my-green);
+      }
+      &.desc {
+        color: var(--my-red);
+      }
+      &.name {
+        margin-left: 8px;
+      }
+    }
+    &-tick {
+      margin-left: 8px;
+    }
+    &-symbol {
+      width: 52px;
+      height: 52px;
+      border-radius: 8px;
+    }
+    &-currency {
+      transform: translateY(1px);
+      opacity: 0.5;
+    }
+  }
+}
